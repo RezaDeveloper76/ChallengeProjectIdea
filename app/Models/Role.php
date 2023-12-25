@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Role extends BaseModel
 {
     use HasFactory;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'role_title',
+    ];
 }
